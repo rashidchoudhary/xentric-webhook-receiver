@@ -1,4 +1,4 @@
-services:
+﻿services:
   postgres:
     image: postgres:16-alpine
     environment:
@@ -24,8 +24,10 @@ services:
       APP_DB_PASSWORD: app_password
       CLIENT_A_SECRET: client-a-secret
       CLIENT_B_SECRET: client-b-secret
+      CLIENT_C_SECRET: client-c-secret
       CLIENT_A_TOKEN: client-a-token
       CLIENT_B_TOKEN: client-b-token
+      CLIENT_C_TOKEN: client-c-token
     ports:
       - "3000:3000"
     depends_on:

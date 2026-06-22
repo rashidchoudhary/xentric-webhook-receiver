@@ -6,7 +6,8 @@ export interface AuthenticatedClient {
 
 const configuredClients = [
   { clientId: 'client_a', tokenEnv: 'CLIENT_A_TOKEN', secretEnv: 'CLIENT_A_SECRET' },
-  { clientId: 'client_b', tokenEnv: 'CLIENT_B_TOKEN', secretEnv: 'CLIENT_B_SECRET' }
+  { clientId: 'client_b', tokenEnv: 'CLIENT_B_TOKEN', secretEnv: 'CLIENT_B_SECRET' },
+  { clientId: 'client_c', tokenEnv: 'CLIENT_C_TOKEN', secretEnv: 'CLIENT_C_SECRET' }
 ] as const;
 
 @Injectable()
